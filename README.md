@@ -4,7 +4,7 @@ A task scheduling system built as **Spring Boot microservices**. Users sign up, 
 
 This repository is the **entry point** for the whole system: architecture, how the services talk to each other, a single `docker compose` file to run everything, and the roadmap. The code of each service lives in its own repository.
 
-> **Status: work in progress.** The four services below exist and run individually. Running the full stack with one command, Java 21, test coverage and the AI assistant are being built in the open — see the [roadmap](#roadmap).
+> **Status: work in progress.** The full stack runs with one command on Java 21. Test coverage, CI badges and the AI assistant are being built in the open — see the [roadmap](#roadmap).
 
 ## Architecture
 
@@ -53,15 +53,14 @@ Compose builds each service straight from its GitHub repository, so you don't ne
 | --- | --- |
 | API docs (Swagger UI) | http://localhost:8083/swagger-ui/index.html |
 | BFF | http://localhost:8083 |
-
-> The one-command setup is tracked in the roadmap and is not yet verified end to end.
+| Reminder inbox (Mailpit) | http://localhost:8025 |
 
 ## Roadmap
 
 Tracked as [issues](https://github.com/GabrielBarrilli/task-scheduler-platform/issues):
 
-- [ ] Run the whole stack with `docker compose up` from a clean clone
-- [ ] Upgrade every service to Java 21 and align Spring Boot versions
+- [x] Run the whole stack with `docker compose up` from a clean clone
+- [x] Upgrade every service to Java 21 and align Spring Boot versions
 - [ ] Unit and integration tests with JaCoCo coverage badges
 - [ ] CI on every push, with build badges
 - [ ] AI assistant service with Spring AI
