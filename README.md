@@ -53,6 +53,7 @@ Compose builds each service straight from its GitHub repository, so you don't ne
 | --- | --- |
 | API docs (Swagger UI) | http://localhost:8083/swagger-ui/index.html |
 | BFF | http://localhost:8083 |
+| Reminder inbox (Mailpit) | http://localhost:8025 |
 
 > The one-command setup is tracked in the roadmap and is not yet verified end to end.
 
